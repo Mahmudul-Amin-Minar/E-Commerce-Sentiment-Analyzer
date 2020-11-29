@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="bg img-overlay">
+    <div class="image-overlay">
+        <div class="container center">
+            <form action="{% url 'amazon' %}" method="post">
+                {% csrf_token %}
+                <div class="row justify-content-md-center">
+                    <div class="form-group col-lg-7">
+                        <label for="inputUrl">URL</label>
+                        <input style="background:#C7CFA8" type="url" class="form-control" id="inputUrl" name="url" aria-describedby="urlHelp" placeholder="Enter product url" required>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center">
+                    <button id="checkbtn" type="submit" class="btn btn-success">Check Sentiment</button>
+                </div>
+            </form>
+        <br>
+    <small style="display:block; color:white; text-align:center">Currently we support Amazon & Walmart only. :) <br> Ex: https://www.amazon.com/Yamaha-AVENTAGE-Audio-Component-RX-A670BL/dp/B06ZZ2VXJ2/ref=cm_cr_arp_d_product_top?ie=UTF8</small>
+
+    </div>
+    </div>
+</div>
+{% endblock %}

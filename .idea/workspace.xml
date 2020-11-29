@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c1d382cb-d20e-4e90-9ecf-02d391a623db" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WsbIUrgD7VjrZUhjy13JjnCb6r" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])" module-name="ecommerce_sentiment" sdk-home="C:\Users\Mahmudul Amin Minar\AppData\Local\Programs\Python\Python38-32\python.exe">
+        <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])" />
+        <option name="mySdkHome" value="C:\Users\Mahmudul Amin Minar\AppData\Local\Programs\Python\Python38-32\python.exe" />
+        <option name="myModuleName" value="ecommerce_sentiment" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\Django Python\ecommerce_sentiment\static" />
+      <recent name="D:\Projects\Django Python\ecommerce_sentiment\templates" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c1d382cb-d20e-4e90-9ecf-02d391a623db" name="Default Changelist" comment="" />
+      <created>1579843408646</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579843408646</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="26" key="#Notifications" timestamp="1579949163288">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="26" key="#Notifications/0.0.1366.738@0.0.1366.738" timestamp="1579949163288" />
+    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579949110490">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1579949110490" />
+    <state x="417" y="129" key="EnvironmentVariablesDialog" timestamp="1579941303656">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="417" y="129" key="EnvironmentVariablesDialog/0.0.1366.738@0.0.1366.738" timestamp="1579941303656" />
+    <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1582223186976">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1582223186976" />
+    <state x="247" y="0" width="916" height="738" key="SettingsEditor" timestamp="1582222250730">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="247" y="0" width="916" height="738" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1582222250730" />
+    <state x="384" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1579941184998">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="384" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1579941184998" />
+  </component>
+</project>

@@ -1,0 +1,31 @@
+
+.output{
+            border: 1px solid grey;
+            max-width: 500px;
+            align: center;
+        }
+        .centeroutput {
+            margin: auto;
+            width: 80%;
+            border: 1px solid black;
+            padding: 10px;
+        }
+         .LockOn {
+            display: block;
+            visibility: visible;
+            position: absolute;
+            z-index: 999;
+            top: 0px;
+            left: 0px;
+            width: 105%;
+            height: 105%;
+            background-color:white;
+            vertical-align:bottom;
+            padding-top: 20%;
+            filter: alpha(opacity=75);
+            opacity: 0.75;
+            font-size:large;
+            color:blue;
+            font-style:italic;
+            font-weight:400;
+        }

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="bg img-overlay">
+    <div class="image-overlay">
+        <div class="container center">
+            <div class="container mt-5">
+                <form action="{% url 'single' %}" method="post">
+                    {% csrf_token %}
+                    <div class="row justify-content-md-center">
+                        <div class="form-group col-lg-7">
+                            <label for="text">Enter Your text here.</label>
+                            <textarea style="background:#C7CFA8" class="form-control" id="text" name="text" rows="3" required></textarea>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <button type="submit" class="btn btn-success">Check</button>
+                    </div>
+                </form>
+
+                <br>
+                {% if t %}
+                    <div class="output centeroutput">
+                        {{text}}
+                        <hr>
+                        <b>Type of sentence: </b>
+                            {% if sentiment == "P" %}
+                                <span style="color:green">Positive</span>
+                            {% elif sentiment == "N" %}
+                                <span style="color:blue">Neutral</span>
+                            {% elif sentiment == "Neg" %}
+                                <span style="color:red">Negative</span>
+                            {% else %}
+                                <span style="color:red">Baaaal</span>
+                            {% endif %}<br>
+                        <hr>
+                        <b>Compound Score: </b>{{t.compound}}<br>
+                        <b>Positive Score: </b>{{t.pos}}<br>
+                        <b>Negative Score: </b>{{t.neg}}<br>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

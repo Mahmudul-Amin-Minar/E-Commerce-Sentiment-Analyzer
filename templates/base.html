@@ -1,0 +1,140 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <title>Ecommerce Sentiment Analyzer</title>
+    <style>
+
+.output{
+            border: 1px solid grey;
+            max-width: 600px;
+            align: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .centeroutput {
+            margin: auto;
+            width: 80%;
+            border: 1px solid black;
+            padding: 10px;
+        }
+         .LockOn {
+            display: block;
+            visibility: visible;
+            position: absolute;
+            z-index: 999;
+            top: 0px;
+            left: 0px;
+            width: 105%;
+            height: 105%;
+            background-color:white;
+            vertical-align:bottom;
+            padding-top: 20%;
+            filter: alpha(opacity=75);
+            opacity: 0.75;
+            font-size:large;
+            color:blue;
+            font-style:italic;
+            font-weight:400;
+        }
+        body, html {
+          height: 100%;
+        }
+        .bg {
+          /* The image used */
+          background-image: url("../static/im.png");
+
+          /* Full height */
+          height: 100%;
+
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .image-overlay {
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.7);
+        }
+        .center{
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+
+<div id="coverScreen"  class="LockOn">
+    <h2 style="color:green; text-align:center">Loading....</h2>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="{% url 'home' %}"><span style="color:orange">Ecommerce</span> <span style="color:lime">Sentiment</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="{% url 'home' %}">Home </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="{% url 'single' %}">Manually check </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'features' %}">Features</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+{% block content %}
+
+{% endblock %}
+
+<!-- Optional JavaScript -->
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<script>
+
+  $(window).on('load', function () {
+       $("#coverScreen").hide();
+  });
+
+  $("#checkbtn").click(function () {
+        $("#coverScreen").show();
+  });
+
+{% block script %}
+
+{% endblock %}
+
+</script>
+</body>
+</html>
